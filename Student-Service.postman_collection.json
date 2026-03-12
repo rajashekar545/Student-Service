@@ -1,0 +1,57 @@
+{
+  "info": {
+    "_postman_id": "2a3ca55b-7032-4194-aa06-bc7d82db79cd",
+    "name": "Student-Service",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "10660040"
+  },
+  "item": [
+    {
+      "name": "getStudents",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8081/students",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8081",
+          "path": [
+            "students"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "addStudent",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \r\n  \"studentName\": \"Raj Shekar\",\r\n  \"grade\": \"1\",\r\n  \"mobileNumber\": \"9876543210\",\r\n  \"schoolName\": \"ABC Public School\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8081/students",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8081",
+          "path": [
+            "students"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
