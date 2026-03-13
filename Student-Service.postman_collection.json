@@ -52,6 +52,55 @@
         }
       },
       "response": []
+    },
+    {
+      "name": "updateStudent",
+      "request": {
+        "method": "PUT",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \r\n  \"studentName\": \"Raj Shekar\",\r\n  \"grade\": \"1\",\r\n  \"mobileNumber\": \"9876543210\",\r\n  \"schoolName\": \"AAAA Public School\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8081/students/1",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8081",
+          "path": [
+            "students",
+            "1"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "deleteStudent",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8081/students/1",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8081",
+          "path": [
+            "students",
+            "1"
+          ]
+        }
+      },
+      "response": []
     }
   ]
 }
